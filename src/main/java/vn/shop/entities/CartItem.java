@@ -1,11 +1,11 @@
-package vn.fs.entities;
+package vn.shop.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @Data

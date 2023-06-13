@@ -1,4 +1,4 @@
-package vn.fs.service;
+package vn.shop.service;
 
 import org.springframework.stereotype.Service;
 
@@ -6,4 +6,8 @@ import org.springframework.stereotype.Service;
 public interface ProductService {
     double countProduct();
     int countProductSale();
+
+    double countProductMonthPT();
+
+    double countProductMonth();
 }

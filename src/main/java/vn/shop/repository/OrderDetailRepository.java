@@ -1,14 +1,14 @@
-package vn.fs.repository;
+package vn.shop.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import vn.fs.entities.OrderDetail;
+import vn.shop.entities.OrderDetail;
 
 import java.util.List;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @Repository

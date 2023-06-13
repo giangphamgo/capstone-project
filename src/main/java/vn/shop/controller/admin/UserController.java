@@ -1,11 +1,11 @@
-package vn.fs.controller.admin;
+package vn.shop.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import vn.fs.entities.User;
-import vn.fs.repository.UserRepository;
+import vn.shop.entities.User;
+import vn.shop.repository.UserRepository;
 
 import java.security.Principal;
 import java.util.List;

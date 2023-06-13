@@ -1,10 +1,10 @@
-package vn.fs.repository;
+package vn.shop.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import vn.fs.entities.Product;
+import vn.shop.entities.Product;
 
 import java.util.List;
 
@@ -21,6 +21,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	int countProductImage(int random);
 	@Query(value = "SELECT COUNT(*) FROM products where discount>0", nativeQuery = true)
 	int countProductSale();
+
+	@Query(value = "SELECT COUNT(*) FROM products ", nativeQuery = true)
+	int countProduct2();
 
 	@Query(value = "SELECT COUNT(*) FROM products", nativeQuery = true)
 	double countProduct();
@@ -68,7 +71,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	
 	// count quantity by product
 	@Query(value = "Select categories.category_id, categories.category_name , COUNT(*) AS SoLuong\n" +
-			"From products,categories where products.status='1' and products.quantity>0 and products.hide=false and DATEDIFF(products.end_date,CURDATE())>0 and products.`category_id`=categories.`category_id` \n" +
+			"From products,categories where products.status='1' and products.quantity>0 and products.hide=false and products.`category_id`=categories.`category_id` \n" +
 			"GROUP BY categories.`category_id`" , nativeQuery = true)
 	public List<Object[]> listCategoryByProductName();
 	
@@ -80,6 +83,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 			"WHERE c.status='1' and c.quantity>0 and c.hide=false and DATEDIFF(c.end_date,CURDATE())>0\n" +
 			"GROUP BY p.product_id ORDER by SoLuong DESC limit 20", nativeQuery = true)
 	public List<Object[]> bestSaleProduct20();
+
+	@Query(value = "SELECT count(*) FROM products where DATEDIFF(CURDATE(), end_date)<=31", nativeQuery = true)
+	Double countProductMonth();
 	
 	@Query(value = "select * from products o where product_id in :ids", nativeQuery = true)
 	List<Product> findByInventoryIds(@Param("ids") List<Integer> listProductId);

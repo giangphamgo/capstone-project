@@ -1,7 +1,7 @@
-package vn.fs.service;
+package vn.shop.service;
 
 import org.springframework.stereotype.Service;
-import vn.fs.dto.MailInfo;
+import vn.shop.dto.MailInfo;
 
 import javax.mail.MessagingException;
 

@@ -1,4 +1,4 @@
-package vn.fs.entities;
+package vn.shop.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @Entity

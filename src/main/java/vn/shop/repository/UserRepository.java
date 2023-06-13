@@ -1,15 +1,15 @@
-package vn.fs.repository;
+package vn.shop.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import vn.fs.entities.User;
+import vn.shop.entities.User;
 
 import javax.transaction.Transactional;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @Repository
@@ -20,6 +20,10 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 	@Query(value = "SELECT COUNT(*) FROM user where DATEDIFF(CURDATE(), register_date)<=31", nativeQuery = true)
 	Double countUserMonth();
+
+
+
+
 	@Query(value = "SELECT COUNT(*) FROM user where DATEDIFF(CURDATE(), register_date)<=1", nativeQuery = true)
 	Double countUserDay();
 

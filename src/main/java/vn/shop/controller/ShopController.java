@@ -1,4 +1,4 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import vn.fs.commom.CommomDataService;
-import vn.fs.entities.Favorite;
-import vn.fs.entities.Product;
-import vn.fs.entities.User;
-import vn.fs.repository.FavoriteRepository;
-import vn.fs.repository.ProductRepository;
+import vn.shop.commom.CommomDataService;
+import vn.shop.entities.Favorite;
+import vn.shop.entities.Product;
+import vn.shop.entities.User;
+import vn.shop.repository.FavoriteRepository;
+import vn.shop.repository.ProductRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,7 +32,7 @@ import java.util.stream.IntStream;
 public class ShopController extends CommomController {
 
 	@Autowired
-	ProductRepository productRepository;
+	ProductRepository ƒ;
 	
 	@Autowired
 	FavoriteRepository favoriteRepository;

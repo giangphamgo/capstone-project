@@ -1,14 +1,14 @@
-package vn.fs.controller.admin;
+package vn.shop.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import vn.fs.entities.OrderDetail;
-import vn.fs.entities.User;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.UserRepository;
+import vn.shop.entities.OrderDetail;
+import vn.shop.entities.User;
+import vn.shop.repository.OrderDetailRepository;
+import vn.shop.repository.UserRepository;
 
 import java.security.Principal;
 import java.sql.SQLException;
@@ -126,6 +126,6 @@ public class ReportController {
 		return "admin/statistical";
 	}
 	
-	// end task developer by DongTHD
+	// end task developer by Giang Pham
 
 }

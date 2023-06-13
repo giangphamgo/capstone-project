@@ -1,4 +1,4 @@
-package vn.fs.commom;
+package vn.shop.commom;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import vn.fs.entities.CartItem;
-import vn.fs.entities.Order;
-import vn.fs.entities.User;
-import vn.fs.repository.FavoriteRepository;
-import vn.fs.repository.ProductRepository;
-import vn.fs.service.ShoppingCartService;
+import vn.shop.entities.CartItem;
+import vn.shop.entities.Order;
+import vn.shop.entities.User;
+import vn.shop.repository.FavoriteRepository;
+import vn.shop.repository.ProductRepository;
+import vn.shop.service.ShoppingCartService;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
@@ -65,8 +65,8 @@ public class CommomDataService {
 	// count product by category
 	public void  listCategoryByProductName(Model model) {
 
-		List<Object[]> coutnProductByCategory = productRepository.listCategoryByProductName();
-		model.addAttribute("coutnProductByCategory", coutnProductByCategory);
+		List<Object[]> countProductByCategory = productRepository.listCategoryByProductName();
+		model.addAttribute("countProductByCategory", countProductByCategory);
 	}
 	
 	//sendEmail by order success

@@ -1,9 +1,9 @@
-package vn.fs.service;
+package vn.shop.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import vn.fs.entities.Order;
-import vn.fs.repository.OrderRepository;
+import vn.shop.entities.Order;
+import vn.shop.repository.OrderRepository;
 
 import java.util.List;
 

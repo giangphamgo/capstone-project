@@ -1,4 +1,4 @@
-package vn.fs.dto;
+package vn.shop.dto;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;

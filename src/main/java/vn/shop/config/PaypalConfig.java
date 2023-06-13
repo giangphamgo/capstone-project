@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 import com.paypal.base.rest.APIContext;
 import com.paypal.base.rest.OAuthTokenCredential;

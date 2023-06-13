@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 public enum PaypalPaymentMethod {
 	credit_card, paypal

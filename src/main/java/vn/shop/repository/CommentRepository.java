@@ -1,11 +1,11 @@
-package vn.fs.repository;
+package vn.shop.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import vn.fs.entities.Comment;
+import vn.shop.entities.Comment;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @Repository

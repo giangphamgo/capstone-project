@@ -13,8 +13,8 @@
     <meta name="author" content="mironcoder" />
     <meta name="email" content="mironcoder@gmail.com" />
     <meta name="profile" content="https://themeforest.net/user/mironcoder" />
-    <meta name="template" content="greeny" />
-    <meta name="title" content="greeny - Ecommerce Food Store HTML Template" />
+    <meta name="template" content="Huy PC" />
+    <meta name="title" content="Huy PC - Ecommerce Food Store HTML Template" />
     <meta
       name="keywords"
       content="organic, food, shop, ecommerce, store, html, bootstrap, template, agriculture, vegetables, products, farm, grocery, natural, online"
@@ -63,7 +63,7 @@
               <h6 class="shop-widget-title">Theo thể loại</h6>
               
                 <ul class="shop-widget-list shop-widget-scroll">
-                  <li th:each="item : ${coutnProductByCategory}">
+                  <li th:each="item : ${countProductByCategory}">
 	                    <div class="shop-widget-content">
 	                    	<a href="javascript:void(0);" th:href="@{/productByCategory(id=${item[0]})}">
 	                      		<label for="cate1" style="color: #119744">[[${item[1]}]]</label>
@@ -139,13 +139,7 @@
 	                        </a>
                         </th:block>
                         
-                        <a
-                        title="Video về sản phẩm"
-                        href="https://youtu.be/9xzcVxSBbG8"
-                        class="venobox fas fa-play"
-                        data-autoplay="true"
-                        data-vbtype="video">
-                        </a>
+
                         <a
                         title="Chi tiết sản phẩm"
                         th:href="@{/productDetail(id=${item.productId})}"
@@ -166,7 +160,7 @@
                     </h6>
                     <h6 class="product-price">
                       <del>[[${#numbers.formatDecimal(item.price, 1, 'DEFAULT', 0, 'DEFAULT')}+' đ']]</del>
-                      <span>[[${#numbers.formatDecimal(item.price - (item.price * item.discount/100), 1, 'DEFAULT', 0, 'DEFAULT')}+' đ']]<small>/kg</small></span>
+                      <span>[[${#numbers.formatDecimal(item.price - (item.price * item.discount/100), 1, 'DEFAULT', 0, 'DEFAULT')}+' đ']]<small></small></span>
                     </h6>
                     
                     <a class="product-add1" title="Thêm Giỏ Hàng" th:href="@{/addToCart(productId=${item.productId})}" >

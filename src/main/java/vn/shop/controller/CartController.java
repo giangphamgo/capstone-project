@@ -1,4 +1,4 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import com.paypal.api.payments.Links;
 import com.paypal.api.payments.Payment;
@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import vn.fs.commom.CommomDataService;
-import vn.fs.config.PaypalPaymentIntent;
-import vn.fs.config.PaypalPaymentMethod;
-import vn.fs.entities.*;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.OrderRepository;
-import vn.fs.service.PaypalService;
-import vn.fs.service.ShoppingCartService;
-import vn.fs.util.Utils;
+import vn.shop.commom.CommomDataService;
+import vn.shop.config.PaypalPaymentIntent;
+import vn.shop.config.PaypalPaymentMethod;
+import vn.shop.entities.*;
+import vn.shop.repository.OrderDetailRepository;
+import vn.shop.repository.OrderRepository;
+import vn.shop.service.PaypalService;
+import vn.shop.service.ShoppingCartService;
+import vn.shop.util.Utils;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;

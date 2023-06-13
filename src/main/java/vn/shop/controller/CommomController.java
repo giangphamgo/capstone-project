@@ -1,14 +1,14 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import vn.fs.entities.Category;
-import vn.fs.entities.User;
-import vn.fs.repository.CategoryRepository;
-import vn.fs.repository.ProductRepository;
-import vn.fs.repository.UserRepository;
+import vn.shop.entities.Category;
+import vn.shop.entities.User;
+import vn.shop.repository.CategoryRepository;
+import vn.shop.repository.ProductRepository;
+import vn.shop.repository.UserRepository;
 
 import java.security.Principal;
 import java.util.List;

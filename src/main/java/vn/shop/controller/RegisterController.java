@@ -1,4 +1,4 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import vn.fs.entities.User;
-import vn.fs.repository.UserRepository;
-import vn.fs.service.SendMailService;
-import vn.fs.service.UserService;
+import vn.shop.entities.User;
+import vn.shop.repository.UserRepository;
+import vn.shop.service.SendMailService;
+import vn.shop.service.UserService;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpSession;

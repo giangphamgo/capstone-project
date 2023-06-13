@@ -1,4 +1,4 @@
-package vn.fs.controller.admin;
+package vn.shop.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import vn.fs.dto.OrderExcelExporter;
-import vn.fs.entities.Order;
-import vn.fs.entities.OrderDetail;
-import vn.fs.entities.Product;
-import vn.fs.entities.User;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.OrderRepository;
-import vn.fs.repository.ProductRepository;
-import vn.fs.repository.UserRepository;
-import vn.fs.service.OrderDetailService;
-import vn.fs.service.SendMailService;
+import vn.shop.dto.OrderExcelExporter;
+import vn.shop.entities.Order;
+import vn.shop.entities.OrderDetail;
+import vn.shop.entities.Product;
+import vn.shop.entities.User;
+import vn.shop.repository.OrderDetailRepository;
+import vn.shop.repository.OrderRepository;
+import vn.shop.repository.ProductRepository;
+import vn.shop.repository.UserRepository;
+import vn.shop.service.OrderDetailService;
+import vn.shop.service.SendMailService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

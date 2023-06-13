@@ -1,11 +1,11 @@
-package vn.fs.config;
+package vn.shop.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import vn.fs.service.UserDetailService;
+import vn.shop.service.UserDetailService;
 
 @Configuration
 public class AppConfig {

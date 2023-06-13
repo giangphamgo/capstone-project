@@ -1,4 +1,4 @@
-package vn.fs.service;
+package vn.shop.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -7,9 +7,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import vn.fs.entities.Role;
-import vn.fs.entities.User;
-import vn.fs.repository.UserRepository;
+import vn.shop.entities.Role;
+import vn.shop.entities.User;
+import vn.shop.repository.UserRepository;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

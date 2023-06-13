@@ -1,4 +1,4 @@
-package vn.fs.util;
+package vn.shop.util;
 
 import javax.servlet.http.HttpServletRequest;
 

@@ -1,4 +1,4 @@
-package vn.fs.controller.admin;
+package vn.shop.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,13 +6,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import vn.fs.entities.User;
-import vn.fs.repository.CategoryRepository;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.UserRepository;
-import vn.fs.service.OrderService;
-import vn.fs.service.ProductService;
-import vn.fs.service.UserService;
+import vn.shop.entities.User;
+import vn.shop.repository.CategoryRepository;
+import vn.shop.repository.OrderDetailRepository;
+import vn.shop.repository.ProductRepository;
+import vn.shop.repository.UserRepository;
+import vn.shop.service.OrderService;
+import vn.shop.service.ProductService;
+import vn.shop.service.UserService;
 
 import java.security.Principal;
 import java.util.List;
@@ -27,6 +28,9 @@ public class IndexAdminController{
 	
 	@Autowired
 	UserRepository userRepository;
+
+	@Autowired
+	ProductRepository productRepository;
 
 	@Autowired
 	ProductService productService;
@@ -59,14 +63,13 @@ public class IndexAdminController{
 	public String index(Model model) {
 
 
-		int countUser= (int) userRepository.countUserAll();
-		double countUserMonth=userService.countUserMonth();
-		double countUserDay=userService.countUserDay();
 
 
-		model.addAttribute("countuserm", countUserMonth);
-		model.addAttribute("countuserd", countUserDay);
-		model.addAttribute("countuser", countUser);
+
+		int countProduct=  (int)productService.countProductMonth();
+		int countProductMonth= (int)productService.countProductMonthPT();
+		model.addAttribute("countProduct", countProduct);
+		model.addAttribute("countProductMonth", countProductMonth);
 
 
 		int countPSale=productService.countProductSale();

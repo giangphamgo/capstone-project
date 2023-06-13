@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;

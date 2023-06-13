@@ -1,4 +1,4 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Value;

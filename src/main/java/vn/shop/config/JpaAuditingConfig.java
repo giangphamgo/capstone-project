@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

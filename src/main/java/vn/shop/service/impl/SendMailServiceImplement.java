@@ -1,4 +1,4 @@
-package vn.fs.service.impl;
+package vn.shop.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.FileSystemResource;
@@ -6,8 +6,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import vn.fs.dto.MailInfo;
-import vn.fs.service.SendMailService;
+import vn.shop.dto.MailInfo;
+import vn.shop.service.SendMailService;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;

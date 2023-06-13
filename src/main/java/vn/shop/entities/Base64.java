@@ -1,4 +1,4 @@
-package vn.fs.entities;
+package vn.shop.entities;
 
 
 import lombok.AllArgsConstructor;
@@ -6,6 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
+/**
+ * @author Giang Pham
+ *
+ */
 
 @Data
 @AllArgsConstructor

@@ -1,12 +1,12 @@
-package vn.fs.service;
+package vn.shop.service;
 
 import com.paypal.api.payments.*;
 import com.paypal.base.rest.APIContext;
 import com.paypal.base.rest.PayPalRESTException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import vn.fs.config.PaypalPaymentIntent;
-import vn.fs.config.PaypalPaymentMethod;
+import vn.shop.config.PaypalPaymentIntent;
+import vn.shop.config.PaypalPaymentMethod;
 
 import java.util.ArrayList;
 import java.util.List;

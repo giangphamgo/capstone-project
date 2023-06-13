@@ -69,7 +69,7 @@
 						<div class="card-header">
 							<div class="d-flex align-items-center">
 								<a th:href="@{/admin/products}" style="text-decoration: none; margin-right: 20px;"><button type="button" class="btn btn-primary">Quản lý sản phẩm</button></a>
-								<a th:href="@{/admin/productDates}" style="text-decoration: none"><button type="button" class="btn btn-light">Sản phẩm sắp và hết bảo hành</button></a>
+								<a th:href="@{/admin/productDates}" style="text-decoration: none"><button type="button" class="btn btn-light">Sản phẩm khuyến mãi</button></a>
 								<a th:href="@{/admin/productQuantity}" style="text-decoration: none"><button type="button" class="btn btn-light">Sản phẩm hết hàng</button></a>
 
 								<button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">
@@ -147,8 +147,8 @@
 													</div>
 													<div class="col-md-6 pr-0">
 														<div class="form-group form-group-default">
-															<label>Ngày hết hạn</label>
-															<input th:field="*{endDate}" id="endDate" type="date" class="form-control" placeholder="Ngày hết hạn">
+															<label>Ngày hết giảm giá</label>
+															<input th:field="*{endDate}" id="endDate" type="date" class="form-control" placeholder="Ngày hết giảm giá">
 														</div>
 													</div>
 													<div class="col-sm-12">
@@ -185,7 +185,7 @@
 										<th>Đơn bán</th>
 										<th>Giảm giá</th>
 										<th>Số lượng</th>
-										<th>Ngày hết hạn</th>
+										<th>Ngày hết giảm giá</th>
 										<th>Mô tả sản phẩm</th>
 										<th>Ẩn bải viết</th>
 										<th style="width: 10%">Hành động</th>
@@ -200,7 +200,7 @@
 										<th>Đơn bán</th>
 										<th>Giảm giá</th>
 										<th>Số lượng</th>
-										<th>Ngày hết hạn</th>
+										<th>Ngày hết giảm giá</th>
 										<th>Mô tả sản phẩm</th>
 										<th>Ẩn bài viết</th>
 										<th>Hành động</th>
@@ -360,7 +360,7 @@
 					<ul class="nav">
 						<li class="nav-item">
 							<a class="nav-link" href="javascript:void(0);">
-								GREENY-SHOP
+								HUY-PC
 							</a>
 						</li>
 						<li class="nav-item">
@@ -376,7 +376,7 @@
 					</ul>
 				</nav>
 				<div class="copyright ml-auto">
-					2021, made with <i class="fa fa-heart heart text-danger"></i> by <a href="javascript:void(0);">GREENY-SHOP</a>
+					2023, made with <i class="fa fa-heart heart text-danger"></i> by <a href="javascript:void(0);">HUY-PC</a>
 				</div>
 			</div>
 		</footer>

@@ -1,9 +1,9 @@
-package vn.fs.service.impl;
+package vn.shop.service.impl;
 
 import org.springframework.stereotype.Service;
-import vn.fs.entities.CartItem;
-import vn.fs.entities.Product;
-import vn.fs.service.ShoppingCartService;
+import vn.shop.entities.CartItem;
+import vn.shop.entities.Product;
+import vn.shop.service.ShoppingCartService;
 
 import java.util.Collection;
 import java.util.HashMap;

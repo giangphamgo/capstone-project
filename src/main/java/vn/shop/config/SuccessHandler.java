@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,4 +1,4 @@
-package vn.fs.config;
+package vn.shop.config;
 
 
 
@@ -10,10 +10,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import vn.fs.dto.MyUser;
-import vn.fs.entities.Role;
-import vn.fs.entities.User;
-import vn.fs.repository.UserRepository;
+import vn.shop.dto.MyUser;
+import vn.shop.entities.Role;
+import vn.shop.entities.User;
+import vn.shop.repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.List;

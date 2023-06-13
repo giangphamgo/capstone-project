@@ -1,4 +1,4 @@
-package vn.fs.controller;
+package vn.shop.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import vn.fs.commom.CommomDataService;
-import vn.fs.entities.Order;
-import vn.fs.entities.OrderDetail;
-import vn.fs.entities.User;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.OrderRepository;
-import vn.fs.repository.UserRepository;
+import vn.shop.commom.CommomDataService;
+import vn.shop.entities.Order;
+import vn.shop.entities.OrderDetail;
+import vn.shop.entities.User;
+import vn.shop.repository.OrderDetailRepository;
+import vn.shop.repository.OrderRepository;
+import vn.shop.repository.UserRepository;
 
 import java.security.Principal;
 import java.util.Collections;

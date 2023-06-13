@@ -1,9 +1,9 @@
-package vn.fs.service.impl;
+package vn.shop.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import vn.fs.repository.OrderRepository;
-import vn.fs.service.OrderService;
+import vn.shop.repository.OrderRepository;
+import vn.shop.service.OrderService;
 
 @Service
 public class OrderServiceIml implements OrderService {
@@ -15,24 +15,24 @@ public class OrderServiceIml implements OrderService {
     @Override
     public double countOder() {
         double a= orderRepository.couldOderMonth();
-        double b= orderRepository.couldOderAll()/100;
-        double phantram= ((b*a)*10);
+        double b= orderRepository.couldOderAll();
+        double phantram= ((b/a)*100);
         return phantram;
     }
 
     @Override
     public double countOderCXN() {
         double a= orderRepository.couldOderCXNMonth();
-        double b= orderRepository.couldOderAll()/100;
-        double phantram= ((b*a)*10);
+        double b= orderRepository.couldOderAll();
+        double phantram= ((b/a)*100);
         return phantram;
     }
 
     @Override
     public double countOderDGH() {
         double a= orderRepository.couldOderDGHMonth();
-        double b= orderRepository.couldOderAll()/100;
-        double phantram= ((b*a)*10);
+        double b= orderRepository.couldOderAll();
+        double phantram= ((b/a)*100);
         return phantram;
     }
 

@@ -1,4 +1,4 @@
-package vn.fs.entities;
+package vn.shop.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * @author DongTHD
+ * @author Giang Pham
  *
  */
 @SuppressWarnings("serial")
